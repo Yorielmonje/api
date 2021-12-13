@@ -1,7 +1,7 @@
 const models = require('../database/models');
 const createJugo = async (req,res)=>{
     try{
-        const jugo = await models.jugo.create(req.body);
+        const jugo = await models.jugos.create(req.body);
         return res.status(201).json({
             jugo
         });
